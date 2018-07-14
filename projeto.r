@@ -5,12 +5,11 @@ library(dlm)
 df_usp <- read.csv(file="USP.csv", sep=",")
 
 #Grafico de todo o dado
-plot(df_usp$freq,type="l",ylab="freq(%)",xlab="time(mes)",main="USP (2004-)")
+plot(df_usp$freq,type="l",ylab="Google (%)",xlab="Time (mes)",main="USP (2004-)")
 
 #Grafico ultimos 5 anos
 df_usp5 <- tail(df_usp,n=12*5)
-plot(df_usp5$freq,type="l",ylab="freq(%)",xlab="time(mes)",main="USP (Ultimos 5 anos)")
-
+plot(df_usp5$freq,type="l",ylab="Google (%)",xlab="Time (mes)",main="USP (Ultimos 5 anos)")
 
 #===========================================
 #=============== Modelos 
@@ -57,7 +56,8 @@ for(t in 2:length(yt)){
 LS <- qnorm(0.975,mt,sqrt(Ct))
 LI <- qnorm(0.025,mt,sqrt(Ct))
 
-plot(yt)
+plot(yt,cex=0.5,ylab="Google (%)",xlab="Time (mes)",main="USP")
 lines(dropFirst(ft), col = 2)
-lines(LS, col = 4, lty = 2)
-lines(LI, col = 4, lty = 2)
+#lines(LS, col = 4, lty = 2)
+#lines(LI, col = 4, lty = 2)
+
