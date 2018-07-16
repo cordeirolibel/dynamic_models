@@ -2,8 +2,9 @@
 # MODELOS DINÂMICOS BAYESIANOS
 
 Projeto desenvolvido na [III Escola de Matemática Aplicada](http://www.cemeai.icmc.usp.br/component/jem/event/65-3-escola-de-matematica-aplicada) do curso [Modelos Dinâmicos e Aplicaçes](http://www.cemeai.icmc.usp.br/component/k2/item/681-modelos-dinamicos-e-aplicacoes) ministrado pelo professor [Helio S. Migon](http://www.dme.ufrj.br/migon/) (UFRJ). <br>
+
 __Resumo:__ A Modelagem dinâmica e previsão  Bayesiana  de séries temporais é uma das mais importantes áreas surgidas no final do século passado.
-Tem como ponto de partida os modelos de regressão. A inclusão de uma evolução temporal dos parâmetros da regressão dão origem a uma ampla classe de modelos incluindo vários temas da estatística moderna. (ver Migon, H.S et al,Handbook ofStatistics Vol 25, Cap. 19, 553-588, 2006. e também Pole West e Harrison, 1994).
+Tem como ponto de partida os modelos de regressão. A inclusão de uma evolução temporal dos parâmetros da regressão dão origem a uma ampla classe de modelos incluindo vários temas da estatística moderna. *(ver Migon, H.S et al,Handbook ofStatistics Vol 25, Cap. 19, 553-588, 2006. e também Pole West e Harrison, 1994)*.
 
 __Ementa:__
 1. Introdução aos modelos dinâmicos.<br>
@@ -31,7 +32,7 @@ Janeiro/2004 a Julho/2018, descrevendo a porcentagem de pesquisa do termo
 normalizados pelo maior valor (frequência relativa). Ressalta-se que em todas as
 análises, foi considerado que os dados apresentam uma distribuição normal.
 
-&emsp; De uma forma geral, pode-se perceber, uma tendência de decaimento
+__Análise:__ De uma forma geral, pode-se perceber, uma tendência de decaimento
 acentuado no número de pesquisas do termo “USP” ao longo dos anos, com alguns
 picos e vales, o que pode caracterizar a existência de uma possível sazonalidade
 (Figura 1 - (a)). Esse decaimento talvez sugira que, quando a internet começou a se
@@ -62,16 +63,13 @@ observados. Pode-se perceber a existência de diversas observações fora do
 intervalo de confiança e também que a curva de predição não descreve totalmente a
 variação dos dados.
 
-
-
 |<img src="imgs/primeira_ordem.jpeg">|
 |:--:| 
 |*__Figura 2:__ Ajuste do Modelo Dinâmico de Primeira Ordem aos dados analisados, considerando m0 = 0, C0 = 1000, V = 400 e W = 4.*|
 
 |<img src="imgs/segunda_ordem.jpeg">|
 |:--:| 
-|*__Figura 3:__ Ajuste do Modelo Dinâmico de Segunda Ordem aos dados analisados,
-considerando m0 = c(0,0), C0 = diag(1000,n,n) e W = diag(c(0.02, 0.01)).*|
+|*__Figura 3:__ Ajuste do Modelo Dinâmico de Segunda Ordem aos dados analisados, considerando m0 = c(0,0), C0 = diag(1000,n,n) e W = diag(c(0.02, 0.01)).*|
 
 &emsp; Como pode-se perceber ao comparar as Figuras 2 e 3, o ajuste de um Modelo
 Linear de Segunda Ordem foi capaz de descrever melhor as variações dos dados, pois
@@ -88,10 +86,7 @@ dos dados.
 
 |<img src="imgs/1_harm.png">|
 |:--:|
-|(a)| 
 |<img src="imgs/fat_harm.png">|
-|:--:|
-|(b)| 
 |*__Figura 4:__ Ajuste do Modelo Dinâmico com 1 Harmônico, considerando variância desconhecida e W=2π/12 (a) e respectivo efeito do harmônico (b).*|
 
 __REFERÊNCIAS:__
