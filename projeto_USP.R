@@ -1,15 +1,3 @@
-# https://docs.google.com/document/d/1YHD1ZskYSWQ60HCj_OChLxomAuNcERHPhEOeLs0qSMc/edit
-# Mandar os Dados  rafaerbisti@gmail.com
-# E-mail Prof Helio Migon
-# migon@im.ufrj.br
-
-#gustavolibel@gmail.com
-
-# Códigos da Semana 2 -------
-# Autora: Raíra Marotta
-# e-mail: raira@dme.ufrj.br
-# Estes códigos estão disponibilizados em https://github.com/rairamarotta
-
 
 # Modelo Normal com variância desconhecida ----------
 
