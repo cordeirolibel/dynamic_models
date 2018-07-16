@@ -25,41 +25,74 @@ Gustavo C. Libel (UTFPR) -
 Junior R. Ribeiro (ICMC)
 
 __Descrição dos dados utilizados:__
-Os dados utilizados para análise correspondem a uma série mensal de Janeiro/2004 a Julho/2018, descrevendo a porcentagem de pesquisa no Google do termo “USP” acessados no Brasil, com dados extraídos do Google Trends (Figura 1 - (a) e (b)). Os dados a serem analisados serão os constantes na Figura 1 (a), sendo a Figura 1 (b) apenas ilustrativa.<br>
-&emsp; OBSERVAÇÃO: Consideramos que os dados apresentam uma distribuição normal.
+Os dados utilizados para análise correspondem a uma série mensal de
+Janeiro/2004 a Julho/2018, descrevendo a porcentagem de pesquisa do termo
+“USP” no Google Web acessados no Brasil (Figura 1 - (a)). Tais dados estão
+normalizados pelo maior valor (frequência relativa). Ressalta-se que em todas as
+análises, foi considerado que os dados apresentam uma distribuição normal.
+
+&emsp; De uma forma geral, pode-se perceber, uma tendência de decaimento
+acentuado no número de pesquisas do termo “USP” ao longo dos anos, com alguns
+picos e vales, o que pode caracterizar a existência de uma possível sazonalidade
+(Figura 1 - (a)). Esse decaimento talvez sugira que, quando a internet começou a se
+popularizar, as pessoas tinham grande curiosidade em conhecer a universidade,
+curiosidade essa que foi diminuindo devido à ampliação da divulgação e difusão de
+oportunidades pelo meio eletrônico, por ser uma realidade mais rotineira.
+
+&emsp; Na Figura 1 (b), pode-se observar de forma mais detalhada o comportamento
+da série em um intervalo mais reduzido, de Julho/2013 a Julho/2018. Percebe-se
+que os maiores valores de pico ocorrem geralmente nos meses de Janeiro,
+Fevereiro e Agosto. Tal fato pode ser explicado pela publicação dos resultados dos
+processos seletivos e vestibulares e posterior, período de matrícula da universidade,
+que é semestral. Note que nos meses de Julho e Dezembro, há uma baixa
+frequência de pesquisas do termo (vales acentuados), possivelmente causada pelo
+período de recesso escolar.
 
 |<img src="imgs/usp.PNG">|
 |:--:| 
 |*(a) Percentual de acesso do termo “USP” de janeiro de 2004 a julho de 2018.*|
 |<img src="imgs/5anos.PNG">|
 |*(b) Percentual de acesso do termo “USP” de julho de 2013 a julho de 2018.*
-|Figura 1: Percentual de pesquisas do termo “USP” no Google no Brasil.|
+|*__Figura 1:__ Percentual de pesquisas do termo “USP” no Google acessados no Brasil durante o período de Janeiro/2004 a Julho/2018 (a). Em (b), destaca-se o comportamento da série em um período mais reduzido, de Julho/2013 a Julho/2018. Fonte: Google Trends.*|
 
-&emsp; Na Figura 1 constam dados extraídos da plataforma do Google Trends, contabilizando a quantidade de pesquisas do termo “USP” no Google Web ao longo dos anos desde janeiro de 2004 até julho de 2018. Os dados capturados estão normalizados pelo maior valor (frequência relativa).<br>
-&emsp; Buscando uma maior riqueza de detalhes, colocamos na Figura 1 (b) um zoom in sobre o gráfico, ou seja, capturando os dados a partir de julho de 2013 até julho de 2018. Nesse gráfico, pode-se perceber que no mês de dezembro há uma baixa frequência de pesquisas do termo (vales acentuados), possivelmente causada por conta do período de recesso escolar. Em contrapartida, nos meses seguintes, janeiro e fevereiro, nota-se um aumento expressivo no interesse do termo “USP”, causado provavelmente pela publicação dos resultados dos processos seletivos e vestibulares e em seguida a matrícula de ingressantes na universidade.<br>
-&emsp; De uma forma geral, pode-se perceber, um decaimento acentuado no número de pesquisas do termo “USP” ao longo dos anos, com alguns picos e vales, o que pode caracterizar a existência de uma possível sazonalidade. O decaimento talvez sugere que, quando a internet começou a se popularizar, as pessoas tinham grande curiosidade em conhecer a universidade, curiosidade essa que foi diminuindo conforme a divulgação e difusão de oportunidades pelo meio eletrônico, por ser uma realidade mais rotineira. Percebe-se que os maiores valores de pico ocorrem geralmente nos meses de fevereiro e agosto, o que pode ser explicado pelas matrículas da universidade, que são semestrais, e então reflete em um maior número de acessos. Os menores valores (vales) são observados nos finais de semestre, que são em julho e dezembro, período de recesso escolar. Nos gráficos mais adiante, essa sazonalidade será mostrada com mais detalhes.<br>
-&emsp; Na Figura 2 apresentamos o ajuste do Modelo Linear de Primeira Ordem e na Figura 3, o Modelo Linear de Segunda Ordem. Podemos observar a existência de diversos pontos fora do intervalo de confiança e também que a curva de predição não descreve totalmente a variação dos dados. Em vermelho consta a previsão em 1 passo, em azul as faixas de confiança e os pontos são os dados.<br>
+&emsp; Na Figura 2, apresenta-se o ajuste do Modelo Linear de Primeira Ordem e na
+Figura 3, o Modelo Linear de Segunda Ordem; em vermelho consta a previsão em 1
+passo, em azul as faixas de confiança e os pontos correspondem aos dados
+observados. Pode-se perceber a existência de diversas observações fora do
+intervalo de confiança e também que a curva de predição não descreve totalmente a
+variação dos dados.
+
+
 
 |<img src="imgs/primeira_ordem.jpeg">|
 |:--:| 
-|*Figura 2: Ajuste do Modelo Dinâmico de Primeira Ordem aos dados analisados, considerando m0 = 0, C0 = 1000, V = 400 e W = 4.*|
+|*__Figura 2:__ Ajuste do Modelo Dinâmico de Primeira Ordem aos dados analisados, considerando m0 = 0, C0 = 1000, V = 400 e W = 4.*|
 
 |<img src="imgs/segunda_ordem.jpeg">|
 |:--:| 
-|*Figura 3: Ajuste do Modelo Dinâmico de Segunda Ordem aos dados analisados, considerando m0 = c(0,0), C0 = diag(1000,n,n) e W = diag(c(0.02, 0.01)) (a) com o respectivo fator de crescimento (b).*|
+|*__Figura 3:__ Ajuste do Modelo Dinâmico de Segunda Ordem aos dados analisados,
+considerando m0 = c(0,0), C0 = diag(1000,n,n) e W = diag(c(0.02, 0.01)).*|
 
-&emsp; Como pode-se perceber ao comparar as Figuras 2 e 3, o ajuste de um Modelo Linear de Segunda Ordem pode descrever melhor as variações dos dados, pois menos pontos ficaram fora da faixa de confiança.
-&emsp; A sazonalidade dos dados pode ser modelada usando séries harmônicas truncadas. Na Figura 4, é apresentada uma modelagem considerando uma série harmônica truncada em apenas 1 harmônico.
+&emsp; Como pode-se perceber ao comparar as Figuras 2 e 3, o ajuste de um Modelo
+Linear de Segunda Ordem foi capaz de descrever melhor as variações dos dados, pois
+menos pontos ficaram fora da faixa de confiança. Porém, o modelo ainda não consegue
+descrever com eficácia o comportamento dos dados observados.
+
+&emsp; Dessa forma, optou-se pelo ajuste de um modelo que considerasse a existência da
+sazonalidade, ou seja, utilizar séries harmônicas truncadas. Na Figura 4 - (a), é apresentada
+uma modelagem, considerando uma série harmônica truncada em apenas 1 harmônico e
+variância desconhecida. É perceptível que o modelo descreve melhor as variações
+presentes nos dados observados. O efeito do harmônico sobre os dados é mostrado na
+Figura 4 - (b). Nota-se uma suavização ao longo do tempo devido a diminuição da variância
+dos dados.
 
 |<img src="imgs/1_harm.png">|
-|:--:| 
-|*Figura 4: Ajuste do Modelo Dinâmico com 1 Harmônico aos dados analisados, considerando w=2π/12, D1=matrix(1/sqrt(.8),2), D2=matrix(1/sqrt(.95),2), D=bdiag(D1,D3), G1=matrix(c(1,0,1,1),2), G2=matrix(c(cos(w),-sin(w),sin(w),cos(w)),2), G=bdiag(G1, G2),m0=rep(0,n), C0=diag(100,n), n0=10, d0=1 e F=cbind(matrix(c(rep(1,T),rep(0,T),rep(1,T),rep(0,T)),nrow=n,byrow=TRUE),c(1,0,1,0)).*|
-
-&emsp; O efeito do harmônico sobre os dados é mostrado na Figura 5. Nota-se uma suavização ao longo do tempo por conta de que a variância dos dados foi diminuindo.
-
+|:--:|
+|(a)| 
 |<img src="imgs/fat_harm.png">|
-|:--:| 
-|*Figura 5: Efeito com 1 harmônico sobre os dados.*|
+|:--:|
+|(b)| 
+|*__Figura 4:__ Ajuste do Modelo Dinâmico com 1 Harmônico, considerando variância desconhecida e W=2π/12 (a) e respectivo efeito do harmônico (b).*|
 
 __REFERÊNCIAS:__
 
