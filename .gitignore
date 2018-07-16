@@ -39,7 +39,10 @@ rsconnect/
 
 *.png
 
-!imgs
+*.PNG
+
+*.jpeg
+
 
 
 
